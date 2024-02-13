@@ -1,0 +1,137 @@
+html,
+body,
+#__next {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body * {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/* 
+    map controller styles (openlayers)
+*/
+/* scaleline */
+.ol-scale-line.ol-unselectable {
+  left: auto;
+  right: 1em;
+  bottom: 1em;
+  background-color: #ffffff61;
+  opacity: 0.8;
+  max-height: 24px;
+}
+.ol-scale-line.ol-unselectable .ol-scale-line-inner {
+  border: 1px solid #333;
+  border-top: none;
+  border-bottom-width: 3px;
+  color: #333;
+}
+/* zoomslider */
+.ol-zoomslider:hover {
+  background-color: #e3e3e3;
+}
+.ol-zoomslider {
+  width: 25px;
+  height: 250px;
+  left: auto;
+  top: auto;
+  right: 0.65em;
+  bottom: 7em;
+}
+button.ol-zoomslider-thumb:hover {
+  background: #e3e3e3;
+}
+button.ol-zoomslider-thumb {
+  width: 100%;
+  margin: 0;
+  background: #ffffff;
+}
+.custom-zoom:hover {
+  background-color: #ffffff; /* openlayers .ol-control:hover 없애기 위함*/
+}
+.custom-zoom {
+  top: 4.3em;
+  right: 1em;
+  width: 61px;
+  height: 32px;
+  padding: 0;
+  background-color: #ffffff;
+  border: 1px solid #c0c0c0;
+  border-radius: 3px;
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+}
+.custom-zoom button:focus,
+.custom-zoom button:hover {
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.custom-zoom button {
+  background-color: #ffffff;
+  color: #000000;
+  width: 50%;
+  height: 100%;
+  font-size: 1.5em;
+  border-radius: 0;
+  margin: auto;
+  display: inline-block;
+  cursor: pointer;
+}
+.custom-zoom button:first-child {
+  border-right: 1px solid #dddddd;
+}
+
+.ol-position {
+  position: absolute;
+  left: auto;
+  right: 0.5em;
+  background-color: #ffffff;
+  padding: 1px;
+  border-radius: 2px;
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+}
+.ol-position:hover {
+  background: #e3e3e3;
+}
+.ol-position i {
+  cursor: pointer;
+  text-align: center;
+  margin: auto;
+  display: block;
+  font-size: 1.5em;
+  border: none;
+  color: #000000;
+  border-radius: 2px;
+  line-height: 1.4em;
+}
+.ol-position.center-position {
+  top: 4.3em;
+  right: 6.3em;
+  background-color: #ffffff;
+  border: 1px solid #c0c0c0;
+  border-radius: 3px;
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  z-index: 200;
+}
+.ol-position.home-position {
+  top: 4.3em;
+  right: 9.4em;
+  background-color: #ffffff;
+  border: 1px solid #c0c0c0;
+  border-radius: 3px;
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  -webkit-filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(0 1px 4px rgba(0, 0, 0, 0.2));
+  z-index: 200;
+}
